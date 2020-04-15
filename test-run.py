@@ -15,3 +15,10 @@ def test_page_title(selenium):
     selenium.maximize_window()
     selenium.get('https://2ip.ru')
     assert 'VPN' in selenium.page_source
+
+
+def test_wrong_page_title(selenium):
+    selenium.implicitly_wait(15)
+    selenium.maximize_window()
+    selenium.get('https://2ip.ru')
+    assert 'VPNNN' in selenium.page_source
