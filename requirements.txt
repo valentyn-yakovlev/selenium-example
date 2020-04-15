@@ -1,0 +1,7 @@
+pytest
+pytest-base-url
+pytest-html
+pytest-metadata
+pytest-selenium
+pytest-variables
+pytest-xdist
